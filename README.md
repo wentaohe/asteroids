@@ -98,7 +98,7 @@ If you have been assigned this code challege it's not expected that you are an e
 
 Here is a gift from Mashey for being a potential new member of our team:
 
-[Python 3 Cheat Sheet](https://www.codecademy.com/learn/learn-python-3/modules/learn-python3-hello-world/cheatsheet)
+- [Python 3 Cheat Sheet](https://www.codecademy.com/learn/learn-python-3/modules/learn-python3-hello-world/cheatsheet)
 
 Please create the following functions.
 
