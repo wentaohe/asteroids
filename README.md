@@ -1,8 +1,6 @@
 # Asteroid Hunter :: v1.0.0
 
-Nasa has asked us to help create a data pipeline for NeoWs (Near Earth Object Web Service), which is a system that
-tracks asteroids and their approaches to Earth. They have asked us to create functions that extract specific data
-sets.
+Nasa has asked us to help create a data pipeline for NeoWs (Near Earth Object Web Service), which is a system that tracks asteroids and their approaches to Earth. They have asked us to create functions that extract specific data sets.
 
 ## Nasa APIs
 
@@ -18,27 +16,79 @@ In the accordian menu at the bottom of the page look for the following API:
 
 The technical requirements listed below are the baseline for the project, but please feel free to use any standard Python packages (`json`, `os`, `pprint`, `datetime`, etc).
 
-Use the `pyenv` formulae for Homebrew to manage Python versions:
+### Installing Python
+
+Install the `pyenv` formulae for Homebrew to manage Python versions:
 
 - [Pyenv](https://formulae.brew.sh/formula/pyenv)
 
-Please use `Python 3.9.0` or above:
+```unix
+brew install pyenv
+```
 
-- [Python 3.9.0](https://www.python.org/) - use `pyenv` to install
+After installing `pyenv` run:
+
+```unix
+pyenv install 3.8.7
+```
+
+Close and reopen your terminal.
+
+### Virtual Environments and Dependency Management
 
 Use `Python Poetry` for virtual environment and dependency management:
 
 - [Python Poetry](https://python-poetry.org/)
 
-For handling HTTP use the `requests` library
+```unix
+curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python -
+```
+
+Poetry is what we use at Mashey to manage the virtual environments and dependencies of our projects. If you are new to Python virtual environments please read this article:
+
+[Python Virtual Environments: A Primer](https://realpython.com/python-virtual-environments-a-primer/)
+
+### Python Packages
+
+Python packages that make designing modular software easier are generally available on [PyPi](https://pypi.org/), which is the most popular Python package hosting platform.
+
+[Optional]
+
+If you are new to Python the following links are great for building understanding, but are not required for this code challenge.
+
+- For more information about packages and modules check out this great [RealPython article](https://realpython.com/python-modules-packages/).
+- For more information about how to import Python packages and modules check out this [RealPython article](https://realpython.com/python-import/).
+
+#### Requests
+
+For handling HTTP use the `requests` package
 
 - [Requests](https://pypi.org/project/requests/)
+
+The `requests` package is how you should interact with the Asteroids API. Documentation can be found [here](https://requests.readthedocs.io/en/master/).
+
+#### Pytest
 
 Test your code with `pytest`:
 
 - [Pytest](https://pypi.org/project/pytest/)
 
+PyTest is our preferred testing package. Documentation can be found [here](https://docs.pytest.org/en/stable/index.html).
+
+#### VCRPY (optional)
+
+If you would like to record the Asteroid API responses on cassettes in order to help avoid hitting the API rate limit please use:
+
+- [VCRPY](https://pypi.org/project/vcrpy/)
+  - [Documentaton](https://vcrpy.readthedocs.io/en/latest/)
+
+This is not required, but if you have experience with recording cassettes of API response it could be helpful.
+
 ## Project Requirements
+
+The most important aspect of this challenge is to write clean and modular code with developer empathy in mind. An incomplete submission that contains solid logic, good organization, and well-tested code would be preferred to a complete submission that is logically inconsistent, disorganized, and not well-tested.
+
+If you have been assigned this code challege it's not expected that you are an expert with Python. The code review of your submission will focus on solid fundamentals and a growth mindset.
 
 Please create the following functions.
 
@@ -46,7 +96,7 @@ Please create the following functions.
 
 Endpoint: `https://api.nasa.gov/neo/rest/v1/neo/browse`
 
-This function should return `JSON` data that includes each asteroid and its closest approach to Earth. There are 1246 pages of data, so please design your function to traverse all pages.
+This function should return `JSON` data that includes each asteroid and its closest approach to Earth. There are 1246 pages of data, so please design your function to traverse all pages. It's possible that you'll hit the API request limit, but that's okay provided your code successfully traverses the response pages up to that point.
 
 The `close_approach_data` field is a list of all approaches for a given asteroid, but only the closest approach should be returned. Here is an example of the expected `JSON` data structure that should be returned for each asteroid:
 
