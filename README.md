@@ -1,12 +1,12 @@
 # Asteroid Hunter :: v1.0.1
 
-Nasa has asked us to help create a data pipeline for NeoWs (Near Earth Object Web Service), which is a system that tracks asteroids and their approaches to Earth. They have asked us to create functions that extract specific data sets for their research.
+NASA has asked us to help create a data pipeline for NeoWs (Near Earth Object Web Service), which is a system that tracks asteroids and their approaches to Earth. They have asked us to create functions that extract specific data sets for their research.
 
-## Nasa APIs
+## NASA APIs
 
-Browse the Nasa APIs and generate an API Key:
+Browse the NASA APIs and generate an API Key:
 
-- [Nasa APIs](https://api.nasa.gov/)
+- [NASA APIs](https://api.gov/)
 
 In the accordian menu at the bottom of the page look for the following API:
 
