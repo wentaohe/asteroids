@@ -88,13 +88,17 @@ If you would like to record the Asteroid API responses on cassettes in order to 
 - [VCRPY](https://pypi.org/project/vcrpy/)
   - [Documentaton](https://vcrpy.readthedocs.io/en/latest/)
 
-This is not required, but if you have experience with recording cassettes of API response it could be helpful.
+This is not required, but if you have experience with recording cassettes of API responses it could be helpful.
 
 ## Project Requirements
 
 The most important aspect of this challenge is to write clean and modular code with developer empathy in mind. An incomplete submission that contains solid logic, good organization, and well-tested code would be preferred to a complete submission that is logically inconsistent, disorganized, and not well-tested.
 
 If you have been assigned this code challege it's not expected that you are an expert with Python. The code review of your submission will focus on solid fundamentals and a growth mindset.
+
+Here is a gift from Mashey for being a potential new member of our team:
+
+[Python 3 Cheat Sheet](https://www.codecademy.com/learn/learn-python-3/modules/learn-python3-hello-world/cheatsheet)
 
 Please create the following functions.
 
