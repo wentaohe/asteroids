@@ -1,4 +1,4 @@
-# Asteroid Hunter :: v1.0.0
+# Asteroid Hunter :: v1.0.1
 
 Nasa has asked us to help create a data pipeline for NeoWs (Near Earth Object Web Service), which is a system that tracks asteroids and their approaches to Earth. They have asked us to create functions that extract specific data sets for their research.
 
