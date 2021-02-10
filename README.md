@@ -32,6 +32,12 @@ After installing `pyenv` run:
 pyenv install 3.8.7
 ```
 
+When the installation process is complete run:
+
+```unix
+pyenv global 3.8.7
+```
+
 Close and reopen your terminal.
 
 ### Virtual Environments and Dependency Management
