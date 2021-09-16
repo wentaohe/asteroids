@@ -6,7 +6,7 @@ NASA has asked us to help create a data pipeline for NeoWs (Near Earth Object We
 
 Browse the NASA APIs and generate an API Key:
 
-- [NASA APIs](https://api.gov/)
+- [NASA APIs](https://api.nasa.gov/)
 
 In the accordian menu at the bottom of the page look for the following API:
 
