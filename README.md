@@ -1,4 +1,4 @@
-# Asteroid Hunter :: v1.0.1
+# Asteroid Hunter :: v1.1.0
 
 Nasa has asked us to help create a data pipeline for NeoWs (Near Earth Object Web Service), which is a system that tracks asteroids and their approaches to Earth. They have asked us to create functions that extract specific data sets for their research.
 
@@ -12,7 +12,7 @@ In the accordian menu at the bottom of the page look for the following API:
 
 - `Asteroids - NeoWs`
 
-## Technical Requirements
+## Environment Requirements
 
 The technical requirements listed below are the baseline for the project, but please feel free to use any standard Python packages (`json`, `os`, `pprint`, `datetime`, etc).
 
@@ -94,7 +94,7 @@ This is not required, but if you have experience with recording cassettes of API
 
 The most important aspect of this challenge is to write clean and modular code with developer empathy in mind. An incomplete submission that contains solid logic, good organization, and well-tested code would be preferred to a complete submission that is logically inconsistent, disorganized, and not well-tested.
 
-If you have been assigned this code challege it's not expected that you are an expert with Python. The code review of your submission will focus on solid fundamentals and a growth mindset.
+The code review of your submission will focus on solid fundamentals and a growth mindset.
 
 Here is a gift from Mashey for being a potential new member of our team:
 
