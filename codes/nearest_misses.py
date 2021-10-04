@@ -1,5 +1,5 @@
 import json
-from .asteroid_closest_approach import asteroid_closest_approach
+from asteroid_closest_approach import asteroid_closest_approach
 
 def nearest_misses(page_limit = None):
     asteroids = json.loads(asteroid_closest_approach(page_limit))

@@ -30,3 +30,4 @@ def month_cloest_approaches(start_month):
         for key, value in data['near_earth_objects'].items():
             results['near_earth_objects'][key] = value
     return json.dumps(results)
+
