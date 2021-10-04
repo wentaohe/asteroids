@@ -1,6 +1,9 @@
 import requests
 import os
 import json
+from dotenv import load_dotenv
+
+load_dotenv()
 
 def feed(start_date, end_date):
   key = os.getenv('KEY')
