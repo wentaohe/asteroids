@@ -2,7 +2,6 @@ import requests
 import os
 import json
 from dotenv import load_dotenv
-
 load_dotenv()
 
 def feed(start_date, end_date):
@@ -20,6 +19,5 @@ def lookup(astroid_id):
   url = f'https://api.nasa.gov/neo/rest/v1/neo/{astroid_id}?api_key={key}'
   return requests.get(url).json()
 
-data = feed('2021-01-01', '2021-01-08')
-for k,v in data['near_earth_objects'].items():
-  print (k, v)
+results = browse(1)
+print(list(results))

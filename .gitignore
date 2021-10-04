@@ -1,2 +1,5 @@
-codes/.pytest_cache
 .DS_Store
+codes/__pycache__
+codes/.pytest_cache
+tests/__pycache__
+tests/.pytest_cache
