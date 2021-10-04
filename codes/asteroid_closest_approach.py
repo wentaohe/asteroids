@@ -6,7 +6,10 @@ def asteroid_closest_approach(page_limit = None):
     closest_asteroids = []
     browse_data = browse() 
     number_of_pages = browse_data['page']['total_pages']
-    for page in range(0, number_of_pages):
+
+    #to take care of the API limit
+    #for page in range(0, number_of_pages):
+    for page in range(0, 5):
         asteroids = browse(page)
         results = find(asteroids, closest_asteroids)
     return json.dumps(results)

@@ -18,6 +18,3 @@ def lookup(astroid_id):
   key = os.getenv('KEY')
   url = f'https://api.nasa.gov/neo/rest/v1/neo/{astroid_id}?api_key={key}'
   return requests.get(url).json()
-
-results = browse(1)
-print(list(results))
