@@ -12,6 +12,6 @@ def test_nearest_misses():
         next = results[x + 1]['close_approach_data']['miss_distance']['astronomical']
 
         #test cases
-        assert current <= next
+        assert current <= next #make sure it's sorted
     
     #assert len(results) == 10

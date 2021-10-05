@@ -15,12 +15,14 @@ def month_cloest_approaches(start_month):
     week_intervals = []
     for week in range(0, num_of_weeks):
         start = week * 7 + 1
-        end = start + 6
+        end = week * 7 + 7
         if end > num_of_days:
             end = num_of_days
-        #for dates/months with single digits, ie 01-01
+
+        #formatting dates/months with single digits, ie 01-01
         start_day = f'{start_month}-{str(start).zfill(2)}'
         end_day = f'{start_month}-{str(end).zfill(2)}'
+        
         week_intervals.append([start_day, end_day])
     
     results = {'month': start_month, 'element_count': 0, 'near_earth_objects': {}}

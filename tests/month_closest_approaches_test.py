@@ -9,5 +9,5 @@ def test_month_cloest_approaches():
     results = json.loads(month_data)
 
     #test cases
-    #assert list(results) == ['month', 'element_count', 'near_earth_objects']
+    assert list(results) == ['month', 'element_count', 'near_earth_objects']
     assert results['month'] == '2018-02'
