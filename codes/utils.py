@@ -4,6 +4,8 @@ import json
 from dotenv import load_dotenv
 load_dotenv()
 
+#all three functions listed under https://api.nasa.gov - Asteroids - NeoWs
+
 def feed(start_date, end_date):
   key = os.getenv('KEY')
   url = f'https://api.nasa.gov/neo/rest/v1/feed?start_date={start_date}&end_date={end_date}&api_key={key}'
