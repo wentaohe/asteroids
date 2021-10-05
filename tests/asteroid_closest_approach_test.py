@@ -10,4 +10,4 @@ def test_asteroid_closest_approach():
 
     #test cases
     #assert asteroids[0]['links']
-    assert len(asteroids) > 0
+    assert float(asteroids[0]['close_approach_data']['miss_distance']['astronomical'])

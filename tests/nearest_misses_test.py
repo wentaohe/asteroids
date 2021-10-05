@@ -14,4 +14,4 @@ def test_nearest_misses():
         #test cases
         assert current <= next #make sure it's sorted
     
-    #assert len(results) == 10
+    assert len(results) == 10
